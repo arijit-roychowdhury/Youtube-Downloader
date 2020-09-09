@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="render.js"></script>
+  </head>
+  <body class="content is-flex">
+    <div class="wrapper">
+      <h1>⚡ Youtube Downloader</h1>
+      <div class="field has-addons mb-4">
+        <div class="control">
+          <input id="inputUrl" class="input is-primary" type="text" placeholder="Youtube Url">
+        </div>
+        <div class="control">
+          <a id="searchUrl" class="button is-primary">Search</a>
+        </div>
+      </div>
+
+      <div id="frameWrapper" ></div>
+
+      <button id="videoSelectBtn" class="button is-text mb-2">
+        Choose a Video Source
+      </button>
+
+      <progress id="progressBar" class="progress is-small is-primary my-3" value="10" max="100">15%</progress>
+
+      
+      <button id="startBtn" class="button is-primary">Start Download</button>
+    </div>
+  </body>
+</html>

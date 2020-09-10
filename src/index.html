@@ -12,9 +12,9 @@
   </head>
   <body class="content is-flex">
     <div class="wrapper">
-      <h1>⚡ Youtube Downloader</h1>
+      <h1 class="main-header">⚡ Youtube Downloader</h1>
       <div class="field has-addons mb-4">
-        <div class="control">
+        <div class="control search_input">
           <input id="inputUrl" class="input is-primary" type="text" placeholder="Youtube Url">
         </div>
         <div class="control">
@@ -24,11 +24,14 @@
 
       <div id="frameWrapper" ></div>
 
-      <button id="videoSelectBtn" class="button is-text mb-2">
-        Choose a Video Source
-      </button>
+      <progress id="progressBar" class="progress is-small is-primary my-3" value="10" max="100">0%</progress>
 
-      <progress id="progressBar" class="progress is-small is-primary my-3" value="10" max="100">15%</progress>
+      
+      <div id="videoSelect" class="select">
+        <select>
+          <option value="">Select Quality</option>
+        </select>
+      </div>
 
       
       <button id="startBtn" class="button is-primary">Start Download</button>

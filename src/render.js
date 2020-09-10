@@ -15,6 +15,7 @@ const videoSelect = document.getElementById('videoSelect');
 const select = videoSelect.querySelector('select');
 
 const searchUrl = document.getElementById('searchUrl');
+
 searchUrl.onclick = e => {
     e.preventDefault();
     let inputUrl = document.getElementById('inputUrl');    
